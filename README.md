@@ -1,6 +1,6 @@
 # Early-Life Battery Lifetime Prediction
 
-Reproduction of *"Predicting battery lifetime under varying usage conditions from early aging data"* (Li, Zhou, Thelen, Howey, Hu; *Cell Reports Physical Science* 5, 101891, 2024), with an extension to in-house cell data.
+Reproduction of *"Predicting battery lifetime under varying usage conditions from early aging data"* (Li, Zhou, Thelen, Howey, Hu; *Cell Reports Physical Science* 5, 101891, 2024), as a part of a project on Predicting Lifetime of in-house batteries using Machine Learning. 
 
 > **Status:** Reproduction on the published ISU-ILCC dataset: **complete**. Extension to in-house data: **in progress** (data processing stage).
 
@@ -16,9 +16,14 @@ This repository:
 
 1. Reproduces the paper's feature engineering and two models (elastic net regression and a hierarchical Bayesian model, HBM) on the public dataset.
 2. Compares my results to the paper's, and documents where and why they differ.
-3. Extends the pipeline to my own cell data (in progress).
 
-**Reproduction approach:** [Reimplemented from the paper / adapted the authors' released code / a mix. Say which, and what you wrote yourself.]
+**Reproduction approach** 
+
+1. Data processing: Most of the features required for the full the reproduction was aquired from the 'Q-Interpolated' file that was shared as a part of the original dataset. But some of the more trivial features required the charging conditions. Which had to be manually added in.
+
+2. Hold Out split: The data that was held out for final testing was the exact same split that the paper use. 
+
+3. The 
 
 ## The problem
 
